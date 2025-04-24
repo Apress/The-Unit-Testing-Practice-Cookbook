@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTestCookBook.TestableApp.EfCore\Apress.UnitTests.TestableApp.Infrastructure.EfCore.csproj" />
+    <ProjectReference Include="..\UnitTestCookBook.TestableApp.Services\Apress.UnitTests.TestableApp.Services.csproj" />
+  </ItemGroup>
+
+</Project>

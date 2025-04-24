@@ -1,0 +1,46 @@
+﻿trigger:
+  branches:
+    include:
+      - main
+      - master
+      - develop
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- checkout: self
+
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '9.x'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build Sample App'
+  inputs:
+    command: 'build'
+    projects: '**/Apress.UnitTestCookbook.SampleApp.csproj'
+    arguments: '--configuration Release'
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet test'
+  inputs:
+    command: 'test'
+    arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[*]*Program*"'
+    publishTestResults: true
+    projects: '**/Apress.UnitTests.csproj'
+
+- task: PublishCodeCoverageResults@2
+  displayName: 'Publish code coverage report'
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: "**/*coverage.cobertura.xml"
+
+# Use this task to run code coverage with Microsoft.NET.Test.Sdk
+# - task: DotNetCoreCLI@2
+#   displayName: 'Run unit tests'
+#   inputs:
+#    command: test
+#    projects: '**/Apress.UnitTests.csproj'
+#    arguments: '--configuration $(buildConfiguration) --settings $(Build.SourcesDirectory)/UnitTestCookBook/coverage.runsettings --collect "Code Coverage"'

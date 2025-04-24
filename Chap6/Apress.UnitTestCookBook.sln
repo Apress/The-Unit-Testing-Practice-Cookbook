@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apress.UnitTests", "UnitTestCookBook\Apress.UnitTests.csproj", "{6E6A9373-7A21-4B89-9FA0-0519927BEECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apress.UnitTests.TestableApp", "UnitTestCookBook.Tests\Apress.UnitTests.TestableApp.csproj", "{82C3724B-4698-4C41-9A0F-65CAEC8396A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apress.UnitTests.TestableApp.Infrastructure.EfCore", "UnitTestCookBook.TestableApp.EfCore\Apress.UnitTests.TestableApp.Infrastructure.EfCore.csproj", "{C0DBA806-1759-48D4-AD87-FF855E6B9AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apress.UnitTests.TestableApp.Services", "UnitTestCookBook.TestableApp.Services\Apress.UnitTests.TestableApp.Services.csproj", "{24090279-5A7A-4065-835B-EB80E7E68608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apress.UnitTests.TestableApp.Domain", "UnitTestCookBook.TestableApp.Domain\Apress.UnitTests.TestableApp.Domain.csproj", "{7E3C7A19-B1B6-42D5-8E0D-5F16EAF4A926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apress.UnitTests.UntestableApp", "Apress.UnitTests.UntestableApp\Apress.UnitTests.UntestableApp.csproj", "{3A3674EC-8AFD-44D4-9431-A88672A27217}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E6A9373-7A21-4B89-9FA0-0519927BEECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6A9373-7A21-4B89-9FA0-0519927BEECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6A9373-7A21-4B89-9FA0-0519927BEECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6A9373-7A21-4B89-9FA0-0519927BEECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C3724B-4698-4C41-9A0F-65CAEC8396A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C3724B-4698-4C41-9A0F-65CAEC8396A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C3724B-4698-4C41-9A0F-65CAEC8396A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C3724B-4698-4C41-9A0F-65CAEC8396A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DBA806-1759-48D4-AD87-FF855E6B9AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DBA806-1759-48D4-AD87-FF855E6B9AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DBA806-1759-48D4-AD87-FF855E6B9AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DBA806-1759-48D4-AD87-FF855E6B9AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24090279-5A7A-4065-835B-EB80E7E68608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24090279-5A7A-4065-835B-EB80E7E68608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24090279-5A7A-4065-835B-EB80E7E68608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24090279-5A7A-4065-835B-EB80E7E68608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3C7A19-B1B6-42D5-8E0D-5F16EAF4A926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3C7A19-B1B6-42D5-8E0D-5F16EAF4A926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3C7A19-B1B6-42D5-8E0D-5F16EAF4A926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E3C7A19-B1B6-42D5-8E0D-5F16EAF4A926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A3674EC-8AFD-44D4-9431-A88672A27217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A3674EC-8AFD-44D4-9431-A88672A27217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A3674EC-8AFD-44D4-9431-A88672A27217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A3674EC-8AFD-44D4-9431-A88672A27217}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

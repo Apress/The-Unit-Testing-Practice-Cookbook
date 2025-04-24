@@ -1,0 +1,6 @@
+@Apress.UnitTestCookbook.SampleApp_HostAddress = http://localhost:5011
+
+GET {{Apress.UnitTestCookbook.SampleApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
